@@ -25,7 +25,10 @@ async def start_chat(message: types.Message, state: FSMContext, command: Command
         await register_new_user(message, command.args, user_id)
         await message.answer(
 "Assalomu alaykum,Shohida Ibragimova tomondan tashkillashtirolayotgan Boylik Formulasi deb nomalangan Vebinarning yordamchi botiga xush kelibsiz! \n\n"
-"<b>🤖Bu bot sizga qanday yordam bera oladi?</b> \n\nUshbu bot orqali siz Ekspert Shohida Ibragimova tomonidan tayyorlangan sovg’alarni qo’lga kiritish uchun shartlarni bajarib sovg’alarni qo’lga kiritishingiz mumkin!",
+"<b>🤖Bu bot sizga qanday yordam bera oladi?</b> \n\nUshbu bot orqali siz Ekspert Shohida Ibragimova tomonidan tayyorlangan sovg’alarni qo’lga kiritish uchun shartlarni "
+"bajarib sovg’alarni qo’lga kiritishingiz mumkin!\n\n"
+"Ro'yxatdan o'tish Uchun Ism va Familiyangizni yuboring:"
+"<b>Masalan: Karshiboev Ilyos</b>",
             parse_mode='HTML'
         )
         await state.set_state(RegisterState.full_name)
