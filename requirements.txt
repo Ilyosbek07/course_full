@@ -1,0 +1,6 @@
+aiogram
+environs
+psycopg2
+psycopg2-binary
+asyncpg
+django-ckeditor==6.6.1
